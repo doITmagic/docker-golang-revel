@@ -2,7 +2,7 @@ version: "2"
 
 services:
   revel:
-    image: doitmagic:go-revel:latest
+    image: doitmagic/docker-golang-revel:latest
     container_name: revel
     volumes:
       - ./conf/supervisord:/etc/supervisor/conf.d #BIND YOUR CONFIG PATH WITH CONTAINER SUPERVISOR PATH
