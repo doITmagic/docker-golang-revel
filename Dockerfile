@@ -1,4 +1,5 @@
-# (Any Docker image can be used as a base. For example, to build on Ubuntu 17,
+# Modified from https://github.com/ysaotome/docker-go-revel-dev
+#(Any Docker image can be used as a base. For example, to build on Ubuntu 17,
 #  you could have specified ubuntu:17.04. See https://hub.docker.com/ for
 #  images that are available on DockerHub)
 
