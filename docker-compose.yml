@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  revel:
+    image: doitmagic:go-revel:latest
+    container_name: revel
+    volumes:
+      - ./conf/supervisord:/etc/supervisor/conf.d #BIND YOUR CONFIG PATH WITH CONTAINER SUPERVISOR PATH
+      - ../:/root/go  # BIND YOUR GOPATH PATH WITH CONTAINER GOPATH
+    working_dir: /root/go # CONTAINER GOPATH
+    tty: true
+    ports:
+      - "80:9000"
+    
