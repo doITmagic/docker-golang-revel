@@ -6,8 +6,7 @@ FROM ubuntu:16.04
 
 MAINTAINER Doitmagic <razvan@doitmagic.com>
 
-# Install libraries as you would on a Debian machine. Remember that the golang
-# base image is built on a debian image.
+# Install libraries
 RUN apt-get update -qq \
     && apt-get install -yq cmake \
                            fceux \
