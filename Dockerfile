@@ -1,14 +1,9 @@
-# This Dockerfile is used to build a Docker image. That image can be converted
-# to a Singularity image for use on OpenMind.
-
-# A Dockerfile must specify a base image. In this case, we will use the
-# golang version 1.9.2 Docker image as our base. It is based on Debian, and Go
-# will already be installed. We can use apt-get to install other packages.
-
 # (Any Docker image can be used as a base. For example, to build on Ubuntu 17,
 #  you could have specified ubuntu:17.04. See https://hub.docker.com/ for
 #  images that are available on DockerHub)
 FROM ubuntu:16.04
+
+MAINTAINER doitmagic <razvan@doitmagic.com>
 
 # Install libraries as you would on a Debian machine. Remember that the golang
 # base image is built on a debian image.
